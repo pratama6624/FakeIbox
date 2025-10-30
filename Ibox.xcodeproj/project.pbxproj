@@ -39,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41078A872EB3CBCC00E5274C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4113B6702B6DF9EA0017B18A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4113B6722B6DFB210017B18A /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		4113B6742B6DFB3E0017B18A /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 		4154FD382B6C6E62009DD06F = {
 			isa = PBXGroup;
 			children = (
+				41078A872EB3CBCC00E5274C /* README.md */,
 				4154FD432B6C6E62009DD06F /* Ibox */,
 				4154FD422B6C6E62009DD06F /* Products */,
 			);
