@@ -69,7 +69,7 @@ Lingkup pengembangan:
 
 ## Author
 **Kukuh Nur Pratama**  
-iOS Developer and Apple Ecosystem Enthusiast
+iOS Developer and Apple Ecosystem Enthusiast  
 Figma: [Fake iBoc](https://www.figma.com/design/V4gKqw4ByiZ0vJt7WtnYQn/Fake-Iboc?node-id=0-1&t=IFK8XoniZ37Smrx2-1)  
 GitHub: [pratama6624](https://github.com/pratama6624)  
 LinkedIn: [linkedin.com/in/kukuhpratama](https://www.linkedin.com/in/kukuhpratama)
