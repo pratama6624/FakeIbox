@@ -1,69 +1,76 @@
-# iBox Mobile - Concept Storefront App
+# Fake iBox Mobile - Concept Storefront App
+
+Aplikasi konsep yang dibuat untuk mensimulasikan pengalaman berbelanja di iBox (Apple Premium Reseller) dalam bentuk aplikasi iOS.
+
+> Catatan: Ini bukan aplikasi resmi dan tidak berafiliasi dengan iBox maupun Apple.
 
 <img width="700" height="506" alt="Image" src="https://github.com/user-attachments/assets/841e8438-b950-4912-9004-ab171e40be86" />
 
-A mobile UI concept for iBox (Apple Premium Reseller) designed to reimagine the shopping experience for iOS users.  
-Built as a personal project to showcase UI/UX design, user flow, and modern mobile layout composition.
+---
+
+## 1. Gambaran Umum
+
+Fake iBox Mobile bertujuan untuk menghadirkan tampilan dan alur pembelian ala Apple Store dalam aplikasi iOS.  
+Fokus utama project ini adalah:
+
+- Membangun UI/UX dengan gaya Apple yang bersih dan minimalis.  
+- Membuat backend API menggunakan Vapor sebagai server-side Swift.  
+- Membangun aplikasi iOS dengan SwiftUI dan arsitektur MVVM.  
+- Menyusun alur katalog: Home → Kategori → Produk → Detail → Keranjang.
+
+Lingkup pengembangan:
+
+- Tidak menggunakan sistem pembayaran nyata.  
+- Menggunakan data dummy dalam database.  
+- Didesain untuk latihan dan showcase portofolio.
 
 ---
 
-## 1. Overview
-This project demonstrates a clean, minimal, and user-focused interface for an online Apple Store experience.  
-Users can explore Apple news, browse product categories, and manage their shopping cart in one smooth mobile flow.
+## 2. Teknologi yang Digunakan
+
+### **Desain**
+- Figma — perancangan UI/UX, layout, style guide, dan komponen.
+
+### **Mobile App (iOS)**
+- Swift — bahasa utama.  
+- SwiftUI — UI/UX.  
+- MVVM — arsitektur.
+
+### **Backend (API)**
+- Vapor — framework Swift.  
+- REST API — endpoint API.
+- JSON — format request/response.
+
+### **Database**
+- PostgreSQL — DBMS.  
+- Fluent — ORM.
 
 ---
 
-## 2. Key Features
-- Home screen with product banners and Apple news  
-- Category filter (Vision Pro, Mac, iPad, iPhone, etc.)  
-- Product grid with discount badges and wishlist option  
-- Shopping cart with subtotal, recommendations, and edit actions  
-- Bottom navigation bar for quick access (Home, Product, Cart, Wishlist, Profile)
+## 3. Fitur Utama (Rencana)
+
+- **Home Screen**: banner, highlight produk, dan quick access.  
+- **Katalog Produk**: filter berdasarkan kategori (iPhone, Mac, iPad, dll).  
+- **Detail Produk**: harga, spesifikasi singkat, dan preview gambar.  
+- **Keranjang (Cart)**: tambah/hapus item, hitung subtotal (simulasi).  
+- **Wishlist (Opsional)**: tandai produk favorit.
 
 ---
 
-## 3. Design Focus
-- UI Style: Minimalist, Apple-inspired design (light mode)  
-- UX Goals: Clear navigation, product-first layout, smooth browsing  
-- Component System: Atoms → Molecules → Organisms (scalable for SwiftUI)  
-- User Journey: Discover → Browse → Add to Cart → Review → Checkout
+## 4. Status Project
 
----
-
-## 4. Tools and Technologies
-- Frontend : Swift & SwiftUI
-- Backend : Vapor
-- UI & UX : Figma
-- Database : PostgreSQL
-- IDE : XCode
-
----
-
-## 5. Screenshots
-Add your screenshots below:
-
-- Home Page  
-- Product List  
-- Shopping Cart  
-- Wishlist  
-
-Example:  
-`![Home Screen](assets/home.png)`
-
----
-
-## 6. About This Project
-This is a conceptual and educational project, not an official iBox app.  
-It is created for portfolio and design practice purposes, focusing on:
-- UI/UX design consistency  
-- Component-based layout structure  
-- iOS visual identity and interaction pattern
+- [ ] Desain UI/UX di Figma  
+- [ ] Setup backend Vapor (migration, model, API)  
+- [ ] Struktur awal SwiftUI + MVVM  
+- [ ] Integrasi API dan alur keranjang  
+- [ ] Polishing UI dan dokumentasi  
 
 ---
 
 ## Author
 **Kukuh Nur Pratama**  
-iOS Developer and Apple Ecosystem Enthusiast  
+iOS Developer and Apple Ecosystem Enthusiast
+Figma: [Fake iBoc](https://www.figma.com/design/V4gKqw4ByiZ0vJt7WtnYQn/Fake-Iboc?node-id=0-1&t=IFK8XoniZ37Smrx2-1)
 GitHub: [pratama6624](https://github.com/pratama6624)  
 LinkedIn: [linkedin.com/in/kukuhpratama](https://www.linkedin.com/in/kukuhpratama)
 
