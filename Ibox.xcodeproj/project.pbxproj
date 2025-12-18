@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,7 @@
 		41D3ADF22B706A8B0066F72E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADF12B706A8B0066F72E /* RegisterView.swift */; };
 		41D3ADF42B706AAE0066F72E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADF32B706AAE0066F72E /* SettingsView.swift */; };
 		41D3ADF62B706AFD0066F72E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADF52B706AFD0066F72E /* NewsView.swift */; };
+		41DDB8532EF1AFA400B4E91E /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +71,13 @@
 		41D3ADF12B706A8B0066F72E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		41D3ADF32B706AAE0066F72E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		41D3ADF52B706AFD0066F72E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		41DDB8512EF1AD4F00B4E91E /* OnBoarding */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OnBoarding; sourceTree = "<group>"; };
+		41DDB8542EF1B71800B4E91E /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4154FD3E2B6C6E62009DD06F /* Frameworks */ = {
@@ -86,6 +93,7 @@
 		4113B66F2B6DF9D80017B18A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
 				4113B68E2B6E26E70017B18A /* Extension */,
 				41D3ADFA2B706B8F0066F72E /* Administrator */,
 				41D3ADF92B706B6A0066F72E /* Template */,
@@ -104,6 +112,7 @@
 		4113B6762B6DFB4F0017B18A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */,
 				4113B6792B6E00210017B18A /* ProductDataModel.swift */,
 				4113B67B2B6E002A0017B18A /* UserData.swift */,
 				4113B68F2B6F31160017B18A /* CategoryDataModel.swift */,
@@ -151,6 +160,7 @@
 		4154FD432B6C6E62009DD06F /* Ibox */ = {
 			isa = PBXGroup;
 			children = (
+				41DDB8542EF1B71800B4E91E /* ViewModel */,
 				4154FD442B6C6E62009DD06F /* IboxApp.swift */,
 				41D3ADEB2B6FF0FB0066F72E /* back.swift */,
 				4154FD462B6C6E62009DD06F /* ContentView.swift */,
@@ -222,6 +232,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
+				41DDB8542EF1B71800B4E91E /* ViewModel */,
 			);
 			name = Ibox;
 			productName = Ibox;
@@ -303,6 +317,7 @@
 				4113B6902B6F31160017B18A /* CategoryDataModel.swift in Sources */,
 				4113B67C2B6E002A0017B18A /* UserData.swift in Sources */,
 				41D3ADF62B706AFD0066F72E /* NewsView.swift in Sources */,
+				41DDB8532EF1AFA400B4E91E /* OnboardingItem.swift in Sources */,
 				41D3ADF42B706AAE0066F72E /* SettingsView.swift in Sources */,
 				4113B67E2B6E00330017B18A /* CartDataModel.swift in Sources */,
 			);
