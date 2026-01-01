@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct HomeViewOld: View {
     @State var photos = ["mac.m216", "macm1max", "macm1pro", "macm2pro"]
     @State private var frameHeight: CGFloat = 200
     @State private var isShadow: Bool = false
@@ -161,5 +161,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeViewOld()
 }

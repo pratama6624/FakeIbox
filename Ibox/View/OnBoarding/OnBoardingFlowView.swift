@@ -38,7 +38,7 @@ struct OnBoardingFlowView: View {
             Color(.systemBackground).ignoresSafeArea()
             
             VStack(spacing: 0) {
-                topBar
+                BrandHeader()
                     .padding(.top, 45)
                     .padding(.horizontal, 18)
                 
@@ -54,36 +54,6 @@ struct OnBoardingFlowView: View {
                     .padding(.horizontal, 22)
                     .padding(.bottom, 22)
                     .padding(.top, 10)
-                
-                Spacer()
-            }
-        }
-    }
-    
-    private var topBar: some View {
-        VStack {
-            HStack(spacing: 12) {
-                Spacer()
-                
-                Text("iBoc")
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundStyle(.primary)
-                
-                HStack(spacing: 8) {
-                    Image(systemName: "applelogo")
-                        .font(.system(size: 31, weight: .semibold))
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Premium")
-                        Text("Partner")
-                    }
-                    .font(.system(size: 14, weight: .semibold))
-                }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .stroke(Color(.systemGray4), lineWidth: 1)
-                )
                 
                 Spacer()
             }

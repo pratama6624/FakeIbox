@@ -11,8 +11,11 @@ import SwiftUI
 struct IboxApp: App {
     var body: some Scene {
         WindowGroup {
-            OnBoardingFlowView()
+//            OnBoardingFlowView()
 //            ContentView()
+//            LoginView(vm: AuthViewModel(), navigate: { _ in })
+//            AuthContainerView()
+            RootView()
         }
     }
 }

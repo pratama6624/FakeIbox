@@ -132,7 +132,7 @@ struct ContentView: View {
     private func contentViewForTab() -> some View {
         switch selectedTab {
             case .home:
-                HomeView()
+                HomeViewOld()
             case .product:
                 ProductView()
             case .cart:
