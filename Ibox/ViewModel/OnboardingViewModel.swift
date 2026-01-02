@@ -8,9 +8,9 @@
 import Foundation
 
 final class OnboardingViewModel: ObservableObject {
+    @Published var items: [OnboardingItem]
     @Published var index: Int = 0
     
-    let items: [OnboardingItem]
     private let onFinish: (() -> Void)?
     
     init(items: [OnboardingItem], onFinish: (() -> Void)? = nil) {

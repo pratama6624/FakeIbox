@@ -13,6 +13,10 @@ struct RootView: View {
     var body: some View {
         Group {
             switch router.flow {
+            case .onboarding:
+                OnBoardingFlowView(onFinish: {
+                    router.completeOnboarding()
+                })
             case .auth:
                 AuthFlowView()
                     .environmentObject(router)

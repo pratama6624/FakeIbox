@@ -23,15 +23,34 @@ enum AuthRoute: Hashable {
 
 // MARK: Auth Flow
 enum AppFlow: Hashable {
+    case onboarding // Welcome Section
     case auth // Auth Section
     case main // Home Section
 }
 
 @MainActor
 final class AppRouter: ObservableObject {
+    private let didFinishOnboardingKey = "didFinishOnboardingKey"
+    
     @Published var flow: AppFlow = .auth
     @Published var authPath = NavigationPath()
     @Published var mainPath = NavigationPath()
+    
+    init() {
+        let args = ProcessInfo.processInfo.arguments
+        if args.contains("-resetOnboarding") {
+            UserDefaults.standard.set(false, forKey: didFinishOnboardingKey)
+        }
+        
+        let finished = UserDefaults.standard.bool(forKey: didFinishOnboardingKey)
+        self.flow = finished ? .auth : .onboarding
+    }
+    
+    func completeOnboarding() {
+        UserDefaults.standard.set(true, forKey: didFinishOnboardingKey)
+        authPath = NavigationPath()
+        flow = .auth
+    }
     
     func goToMain() {
         authPath = NavigationPath()
@@ -41,5 +60,11 @@ final class AppRouter: ObservableObject {
     func logout() {
         mainPath = NavigationPath()
         flow = .auth
+    }
+    
+    // MARK: TESTING onboarding View
+    func resetOnboarding() {
+        UserDefaults.standard.set(false, forKey: didFinishOnboardingKey)
+        flow = .onboarding
     }
 }
