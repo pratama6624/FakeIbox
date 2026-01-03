@@ -40,6 +40,7 @@
 		41DDB8532EF1AFA400B4E91E /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */; };
 		41DDB8672EF75E4400B4E91E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */; };
 		41F08FCA2F08D12C001BBF10 /* RegisterSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08FC92F08D123001BBF10 /* RegisterSuccessView.swift */; };
+		41F08FCC2F0963CF001BBF10 /* ForgotPasswordSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		41F08FC92F08D123001BBF10 /* RegisterSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessView.swift; sourceTree = "<group>"; };
+		41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSuccessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -206,6 +208,7 @@
 			children = (
 				41DDB8682EF760E800B4E91E /* AuthComponents */,
 				41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */,
+				41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */,
 				41D3ADEF2B706A5B0066F72E /* LoginView.swift */,
 				41D3ADF12B706A8B0066F72E /* RegisterView.swift */,
 				41F08FC92F08D123001BBF10 /* RegisterSuccessView.swift */,
@@ -327,6 +330,7 @@
 				4154FD472B6C6E62009DD06F /* ContentView.swift in Sources */,
 				4113B6812B6E00B50017B18A /* ProductController.swift in Sources */,
 				41D3ADF22B706A8B0066F72E /* RegisterView.swift in Sources */,
+				41F08FCC2F0963CF001BBF10 /* ForgotPasswordSuccessView.swift in Sources */,
 				4113B6832B6E00BF0017B18A /* UserController.swift in Sources */,
 				414512D92B7E5FEB00636265 /* Service.swift in Sources */,
 				41F08FCA2F08D12C001BBF10 /* RegisterSuccessView.swift in Sources */,

@@ -7,10 +7,17 @@
 
 import Foundation
 
+// Error Handling Per Field
+enum ResetPasswordField: Hashable {
+    case emailOrPhone
+}
+
 @MainActor
 final class ResetPasswordViewModel: ObservableObject {
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
+    @Published var errors: [ResetPasswordField: String] = [:]
+    
     @Published var successMessage: String? = nil
     
     let form: AuthFormState
@@ -27,9 +34,8 @@ final class ResetPasswordViewModel: ObservableObject {
         
         // Email or Handphone Validation
         let id = form.emailOrPhone.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !id.isEmpty else {
-            errorMessage = "Email atau nomor telepon wajib diisi"
-            return false
+        if id.isEmpty {
+            errors[.emailOrPhone] = "Email atau nomor telepon wajib diisi"
         }
         
         isLoading = true

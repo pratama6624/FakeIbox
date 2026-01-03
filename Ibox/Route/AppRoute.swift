@@ -18,8 +18,9 @@ enum AppRoute: Hashable {
 enum AuthRoute: Hashable {
     case login
     case register
-    case forgot
     case registerSuccess
+    case forgot
+    case forgotSuccess
 }
 
 // MARK: Auth Flow

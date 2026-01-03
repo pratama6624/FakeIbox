@@ -40,6 +40,11 @@ struct AuthFlowView: View {
                             navigate: { r in router.authPath.append(r) }
                         )
                         .environmentObject(vm)
+                        
+                    case .registerSuccess:
+                        RegisterSuccessView(
+                            navigate: { r in router.authPath.append(r) }
+                        )
 
                     case .forgot:
                         ForgotPasswordView(
@@ -48,8 +53,8 @@ struct AuthFlowView: View {
                         )
                         .environmentObject(vm)
                         
-                    case .registerSuccess:
-                        RegisterSuccessView(
+                    case .forgotSuccess:
+                        ForgotPasswordSuccessView(
                             navigate: { r in router.authPath.append(r) }
                         )
                     }
