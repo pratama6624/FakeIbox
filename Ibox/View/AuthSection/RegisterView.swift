@@ -91,7 +91,10 @@ struct RegisterView: View {
                 }
                 
                 AuthPrimaryButton(title: "Daftar", isLoading: vm.isLoading) {
-                    Task { await vm.register() }
+                    Task {
+                        let ok = await vm.register()
+                        if ok { navigate(.registerSuccess) }
+                    }
                 }
                 .padding(.top, 16)
                 

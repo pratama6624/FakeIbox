@@ -19,6 +19,7 @@ enum AuthRoute: Hashable {
     case login
     case register
     case forgot
+    case registerSuccess
 }
 
 // MARK: Auth Flow

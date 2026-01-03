@@ -33,11 +33,8 @@ struct LoginView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                
-//                Spacer(minLength: 10)
-                
+
                 BrandHeader()
-//                    .padding(.top, 34)
                 
                 Text("Masuk")
                     .font(.system(size: 30, weight: .bold))
