@@ -132,7 +132,7 @@ struct ContentView: View {
     private func contentViewForTab() -> some View {
         switch selectedTab {
             case .home:
-                HomeViewOld()
+                HomeViewOld(onLogout: { })
             case .product:
                 ProductView()
             case .cart:
@@ -177,3 +177,4 @@ struct SecondView: View {
         .navigationTitle("Second View")
     }
 }
+

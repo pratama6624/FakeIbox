@@ -12,6 +12,8 @@ struct HomeViewOld: View {
     @State private var frameHeight: CGFloat = 200
     @State private var isShadow: Bool = false
     
+    let onLogout: () -> Void
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -160,6 +162,6 @@ struct HomeViewOld: View {
     }
 }
 
-#Preview {
-    HomeViewOld()
-}
+//#Preview {
+//    HomeViewOld()
+//}

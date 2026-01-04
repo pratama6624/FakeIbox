@@ -12,9 +12,9 @@ struct MainFlowView: View {
     
     var body: some View {
         NavigationStack(path: $router.mainPath) {
-//            HomeView(
-//                onLogout: { router.logout() }
-//            )
+            HomeView(
+                onLogout: { router.logout() }
+            )
         }
     }
 }

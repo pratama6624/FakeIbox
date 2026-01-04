@@ -41,6 +41,7 @@
 		41DDB8672EF75E4400B4E91E /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */; };
 		41F08FCA2F08D12C001BBF10 /* RegisterSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08FC92F08D123001BBF10 /* RegisterSuccessView.swift */; };
 		41F08FCC2F0963CF001BBF10 /* ForgotPasswordSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */; };
+		41F08FD02F096E73001BBF10 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F08FCF2F096E6F001BBF10 /* HomeModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		41F08FC92F08D123001BBF10 /* RegisterSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessView.swift; sourceTree = "<group>"; };
 		41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSuccessView.swift; sourceTree = "<group>"; };
+		41F08FCF2F096E6F001BBF10 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -109,13 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				41564B292F0673580033FE22 /* AppFlow */,
-				41779C382EFF827E00AF9E39 /* HomeSection */,
 				4127E6862EF98F04004CB2A0 /* Components */,
 				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
 				4113B68E2B6E26E70017B18A /* Extension */,
 				41D3ADFA2B706B8F0066F72E /* Administrator */,
 				41D3ADF92B706B6A0066F72E /* Template */,
 				41D3ADF82B706B460066F72E /* UserActivity */,
+				41779C382EFF827E00AF9E39 /* HomeSection */,
 				41D3ADF72B706B110066F72E /* AuthSection */,
 				4113B6702B6DF9EA0017B18A /* HomeViewOld.swift */,
 				4113B6912B6F46AF0017B18A /* SideMenu.swift */,
@@ -130,6 +132,7 @@
 		4113B6762B6DFB4F0017B18A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41F08FCF2F096E6F001BBF10 /* HomeModels.swift */,
 				41779C292EFDF93B00AF9E39 /* AuthFormState.swift */,
 				41DDB8522EF1AF9E00B4E91E /* OnboardingItem.swift */,
 				4113B6792B6E00210017B18A /* ProductDataModel.swift */,
@@ -333,6 +336,7 @@
 				41F08FCC2F0963CF001BBF10 /* ForgotPasswordSuccessView.swift in Sources */,
 				4113B6832B6E00BF0017B18A /* UserController.swift in Sources */,
 				414512D92B7E5FEB00636265 /* Service.swift in Sources */,
+				41F08FD02F096E73001BBF10 /* HomeModels.swift in Sources */,
 				41F08FCA2F08D12C001BBF10 /* RegisterSuccessView.swift in Sources */,
 				41DDB8672EF75E4400B4E91E /* ForgotPasswordView.swift in Sources */,
 				4113B6752B6DFB3E0017B18A /* ProductDetailView.swift in Sources */,
