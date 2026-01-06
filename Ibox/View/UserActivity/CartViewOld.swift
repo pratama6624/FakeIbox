@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CartView: View {
+struct CartViewOld: View {
     @State private var showPaymentView = false
     
     var body: some View {
@@ -356,5 +356,5 @@ struct CartView: View {
 }
 
 #Preview {
-    CartView()
+    CartViewOld()
 }

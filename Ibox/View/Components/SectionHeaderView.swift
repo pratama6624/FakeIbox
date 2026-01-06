@@ -15,13 +15,13 @@ struct SectionHeaderView: View {
     var body: some View {
         HStack(alignment: .lastTextBaseline) {
             Text(title)
-                .font(.system(size: 22, weight: .bold))
+                .font(.system(size: 19, weight: .bold))
             
             Spacer()
             
             if let trailingTitle {
                 Button(trailingTitle) { onTapTrailing?() }
-                    .font(.system(size: 14, weight: .semibold))
+                    .font(.system(size: 15, weight: .bold))
                     .foregroundStyle(Color(.systemGray))
                     .buttonStyle(.plain)
             }

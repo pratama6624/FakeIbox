@@ -24,3 +24,20 @@ struct ProductCategory: Identifiable, Hashable {
     let subtitle: String
     let imageName: String
 }
+
+struct RecommendedProduct: Identifiable, Hashable {
+    let id = UUID()
+    let imageName: String
+    let name: String
+    let variant: String
+    let priceText: String
+    let rating: Int
+    var isWishlisted: Bool
+}
+
+struct HomeFeature: Identifiable, Hashable {
+    let id = UUID()
+    let iconName: String
+    let title: String
+    let subtitle: String
+}

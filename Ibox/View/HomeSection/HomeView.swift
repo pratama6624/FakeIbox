@@ -15,31 +15,37 @@ struct HomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 
-                HomeHeaderView(
-                    userName: vm.userName,
-                    onSearch: vm.tapSearch,
-                    onNotification: vm.tapNotifications,
-                    onMenu: vm.tapMenu
-                )
-                .padding(.top, 8)
-                
                 // Pilih toko
                 Button {
                     vm.tapSelectStore()
                 } label: {
-                    HStack(spacing: 8) {
+                    HStack(spacing: 5) {
                         Image(systemName: "house")
+                            .font(.system(size: 14))
+                            .padding(.bottom, 2)
                         Text(vm.selectedStore)
-                            .font(.system(size: 16, weight: .semibold))
+                            .font(.system(size: 15, weight: .bold))
                     }
                     .foregroundStyle(.primary)
                     .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.plain)
                 
+                // Banner Home
                 PromoCarouselView(promos: vm.promos)
+                
+                // News
+                SectionHeaderView(
+                    title: "Berita terbaru",
+                    trailingTitle: "Lihat semua",
+                    onTapTrailing: vm.tapSeeAllNews
+                )
+                NewsHorizontalView(items: vm.news)
+                
+                // Categories
+                SectionHeaderView(title: "Berbagai Produk Apple")
+                CategoryRowView(categories: vm.categories)
             }
-            .padding(.horizontal, 24)
             .padding(.bottom, 20)
         }
         .scrollIndicators(.hidden)

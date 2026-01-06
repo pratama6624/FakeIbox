@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProductView: View {
+struct ProductViewOld: View {
     @State private var porductController = ProductController()
     
     let column: [GridItem] = [
@@ -53,7 +53,7 @@ struct ProductView: View {
 }
 
 #Preview {
-    ProductView()
+    ProductViewOld()
 }
 
 struct ProductViewItem: View {

@@ -17,7 +17,7 @@ struct HomeHeaderView: View {
         HStack(spacing: 12) {
             Circle()
                 .fill(Color(.systemGray5))
-                .frame(width: 36, height: 36)
+                .frame(width: 30, height: 30)
                 .overlay(
                     Image("profile.jpg")
                         .resizable()
@@ -27,7 +27,7 @@ struct HomeHeaderView: View {
             
             VStack(alignment: .leading, spacing: 2) {
                 Text("Hallo \(userName)!")
-                    .font(.system(size: 16, weight: .semibold))
+                    .font(.system(size: 14, weight: .bold))
             }
             
             Spacer()

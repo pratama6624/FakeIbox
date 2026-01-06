@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AccountView: View {
+struct AccountViewOld: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -16,5 +16,5 @@ struct AccountView: View {
 }
 
 #Preview {
-    AccountView()
+    AccountViewOld()
 }

@@ -134,15 +134,15 @@ struct ContentView: View {
             case .home:
                 HomeViewOld(onLogout: { })
             case .product:
-                ProductView()
+                ProductViewOld()
             case .cart:
-                CartView()
+                CartViewOld()
             case .account:
-                AccountView()
+                AccountViewOld()
             case .payment:
                 PaymentView()
             case .wislish:
-                WislishView()
+                WislishViewOld()
         }
     }
 }

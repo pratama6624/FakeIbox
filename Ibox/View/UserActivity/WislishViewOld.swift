@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WislishView: View {
+struct WislishViewOld: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Text("My Wislish")
@@ -142,5 +142,5 @@ struct WislishView: View {
 }
 
 #Preview {
-    WislishView()
+    WislishViewOld()
 }
