@@ -18,14 +18,14 @@ struct NewsHorizontalView: View {
                         Image(item.imageName)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 208, height: 104)
+                            .frame(width: 198, height: 94)
                             .clipped()
                             .overlay(
-                                Color.black.opacity(0.28)
+                                Color.black.opacity(0.4)
                             )
                         
                         Text(item.title)
-                            .font(.system(size: 16, weight: .bold))
+                            .font(.system(size: 15, weight: .bold))
                             .foregroundStyle(.white)
                             .padding(.horizontal, 12)
                             .padding(.bottom, 10)
@@ -38,6 +38,6 @@ struct NewsHorizontalView: View {
             .padding(.vertical, 2)
         }
         .scrollIndicators(.hidden)
-        .padding(.bottom, 16)
+        .padding(.bottom, 10)
     }
 }

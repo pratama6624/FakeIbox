@@ -17,8 +17,9 @@ struct CategoryRowView: View {
                     VStack(spacing: 8) {
                         Image(cat.imageName)
                             .resizable()
-                            .scaledToFill()
-                            .frame(height: 61)
+                            .scaledToFit()
+                            .frame(width: 59, height: 59)
+                            .clipped()
                         
                         Text(cat.title)
                             .font(.system(size: 14, weight: .bold))
@@ -33,6 +34,6 @@ struct CategoryRowView: View {
             .padding(.vertical, 2)
         }
         .scrollIndicators(.hidden)
-        .padding(.bottom, 16)
+        .padding(.bottom, 10)
     }
 }
