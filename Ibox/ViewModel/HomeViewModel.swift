@@ -28,9 +28,9 @@ final class HomeViewModel: ObservableObject {
     func load() {
         // Dummy data before API
         promos = [
-            .init(imageName: "banner_1.jpg"),
-            .init(imageName: "banner_2.jpg"),
             .init(imageName: "banner_3.jpg"),
+            .init(imageName: "banner_2.jpg"),
+            .init(imageName: "banner_1.jpg"),
             .init(imageName: "banner_4.jpg"),
             .init(imageName: "banner_5.jpg")
         ]

@@ -20,6 +20,9 @@ struct NewsHorizontalView: View {
                             .scaledToFill()
                             .frame(width: 208, height: 104)
                             .clipped()
+                            .overlay(
+                                Color.black.opacity(0.28)
+                            )
                         
                         Text(item.title)
                             .font(.system(size: 16, weight: .bold))

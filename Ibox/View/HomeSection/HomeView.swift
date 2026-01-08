@@ -45,6 +45,39 @@ struct HomeView: View {
                 // Categories
                 SectionHeaderView(title: "Berbagai Produk Apple")
                 CategoryRowView(categories: vm.categories)
+                
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionHeaderView(title: "Rekomendasi Terbaik")
+                        .padding(.bottom, 10)
+
+                    VStack(spacing: 10) {
+                        ForEach(vm.recommendedVisible) { item in
+                            RecommendedProductRow(item: item) {
+                                vm.toggleWishlist(id: item.id)
+                            }
+                        }
+
+                        Button(vm.showAllRecommended ? "Show Less" : "Show More") {
+                            withAnimation(.easeOut(duration: 0.2)) {
+                                vm.toggleShowMore()
+                            }
+                        }
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(.primary)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 8)
+                        .background(
+                            Capsule().fill(Color(.systemGray5))
+                        )
+                        .buttonStyle(.plain)
+                        .padding(.top, 2)
+                    }
+                }
+                .padding(.top, 6)
+
+                FeatureGridView(items: vm.features)
+                .padding(.top, 6)
+                
             }
             .padding(.bottom, 20)
         }
