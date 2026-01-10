@@ -24,8 +24,6 @@
 		4113B6922B6F46AF0017B18A /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4113B6912B6F46AF0017B18A /* SideMenu.swift */; };
 		414512D32B79A43C00636265 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D22B79A43C00636265 /* PaymentView.swift */; };
 		414512D52B79A65800636265 /* AccountViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D42B79A65800636265 /* AccountViewOld.swift */; };
-		414512D72B7D08F000636265 /* CarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D62B7D08F000636265 /* CarouselSlider.swift */; };
-		414512D92B7E5FEB00636265 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D82B7E5FEB00636265 /* Service.swift */; };
 		4154FD452B6C6E62009DD06F /* IboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154FD442B6C6E62009DD06F /* IboxApp.swift */; };
 		4154FD472B6C6E62009DD06F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154FD462B6C6E62009DD06F /* ContentView.swift */; };
 		4154FD492B6C6E64009DD06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4154FD482B6C6E64009DD06F /* Assets.xcassets */; };
@@ -64,8 +62,6 @@
 		4113B6912B6F46AF0017B18A /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		414512D22B79A43C00636265 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		414512D42B79A65800636265 /* AccountViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewOld.swift; sourceTree = "<group>"; };
-		414512D62B7D08F000636265 /* CarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSlider.swift; sourceTree = "<group>"; };
-		414512D82B7E5FEB00636265 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4154FD412B6C6E62009DD06F /* Ibox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4154FD442B6C6E62009DD06F /* IboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IboxApp.swift; sourceTree = "<group>"; };
 		4154FD462B6C6E62009DD06F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,7 +91,6 @@
 		41779C3C2EFF9DC500AF9E39 /* Helper */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helper; sourceTree = "<group>"; };
 		41DDB8512EF1AD4F00B4E91E /* OnBoarding */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = OnBoarding; sourceTree = "<group>"; };
 		41DDB8542EF1B71800B4E91E /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
-		41DDB8682EF760E800B4E91E /* AuthComponents */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AuthComponents; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +110,6 @@
 				41564B292F0673580033FE22 /* AppFlow */,
 				4127E6862EF98F04004CB2A0 /* Components */,
 				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
-				4113B68E2B6E26E70017B18A /* Extension */,
 				41D3ADFA2B706B8F0066F72E /* Administrator */,
 				41D3ADF92B706B6A0066F72E /* Template */,
 				41D3ADF82B706B460066F72E /* UserActivity */,
@@ -154,15 +148,6 @@
 				4113B6822B6E00BF0017B18A /* UserController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4113B68E2B6E26E70017B18A /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				414512D62B7D08F000636265 /* CarouselSlider.swift */,
-				414512D82B7E5FEB00636265 /* Service.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		4154FD382B6C6E62009DD06F = {
@@ -212,7 +197,6 @@
 		41D3ADF72B706B110066F72E /* AuthSection */ = {
 			isa = PBXGroup;
 			children = (
-				41DDB8682EF760E800B4E91E /* AuthComponents */,
 				41DDB8662EF75E3300B4E91E /* ForgotPasswordView.swift */,
 				41F08FCB2F0963BF001BBF10 /* ForgotPasswordSuccessView.swift */,
 				41D3ADEF2B706A5B0066F72E /* LoginView.swift */,
@@ -274,7 +258,6 @@
 				41779C3C2EFF9DC500AF9E39 /* Helper */,
 				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
 				41DDB8542EF1B71800B4E91E /* ViewModel */,
-				41DDB8682EF760E800B4E91E /* AuthComponents */,
 			);
 			name = Ibox;
 			productName = Ibox;
@@ -338,12 +321,10 @@
 				41D3ADF22B706A8B0066F72E /* RegisterView.swift in Sources */,
 				41F08FCC2F0963CF001BBF10 /* ForgotPasswordSuccessView.swift in Sources */,
 				4113B6832B6E00BF0017B18A /* UserController.swift in Sources */,
-				414512D92B7E5FEB00636265 /* Service.swift in Sources */,
 				41F08FD02F096E73001BBF10 /* HomeModels.swift in Sources */,
 				41F08FCA2F08D12C001BBF10 /* RegisterSuccessView.swift in Sources */,
 				41DDB8672EF75E4400B4E91E /* ForgotPasswordView.swift in Sources */,
 				4113B6752B6DFB3E0017B18A /* ProductDetailView.swift in Sources */,
-				414512D72B7D08F000636265 /* CarouselSlider.swift in Sources */,
 				4113B6732B6DFB210017B18A /* ProductViewOld.swift in Sources */,
 				41D3ADEC2B6FF0FB0066F72E /* back.swift in Sources */,
 				41D3ADEE2B7069F40066F72E /* WislishViewOld.swift in Sources */,

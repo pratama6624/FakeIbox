@@ -42,12 +42,12 @@ final class HomeViewModel: ObservableObject {
         ]
         
         categories = [
-            .init(title: "Mac", subtitle: "Mulai dari 11 jt an", imageName: "cat_mac.png"),
-            .init(title: "iPhone", subtitle: "Mulai dari 8 jt an", imageName: "cat_iphone.png"),
-            .init(title: "iPad", subtitle: "Mulai dari 4 jt an", imageName: "cat_ipad.png"),
-            .init(title: "Watch", subtitle: "Mulai dari 2 jt an", imageName: "cat_watch.png"),
-            .init(title: "Music", subtitle: "Mulai dari 2 jt an", imageName: "cat_music.png"),
-            .init(title: "Aksesoris", subtitle: "Mulai dari 300 ribu an", imageName: "cat_acc.png")
+            .init(title: "Mac", subtitle: "Mulai dari 11jt", imageName: "cat_mac.png"),
+            .init(title: "iPhone", subtitle: "Mulai dari 8jt", imageName: "cat_iphone.png"),
+            .init(title: "iPad", subtitle: "Mulai dari 4jt", imageName: "cat_ipad.png"),
+            .init(title: "Watch", subtitle: "Mulai dari 2jt", imageName: "cat_watch.png"),
+            .init(title: "Music", subtitle: "Mulai dari 2jt", imageName: "cat_music.png"),
+            .init(title: "Accessories", subtitle: "Mulai dari 300ribu", imageName: "cat_acc.png")
         ]
         
         recommended = [

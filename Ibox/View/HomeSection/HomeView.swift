@@ -45,7 +45,7 @@ struct HomeView: View {
                 // Categories
                 SectionHeaderView(title: "Berbagai Produk Apple")
                     .padding(.bottom, -10)
-                CategoryRowView(categories: vm.categories)
+                HomeCategoryView(categories: vm.categories)
                 
                 VStack(alignment: .leading, spacing: 12) {
                     SectionHeaderView(title: "Rekomendasi Terbaik")

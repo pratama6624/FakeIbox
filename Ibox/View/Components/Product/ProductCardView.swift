@@ -59,7 +59,7 @@ struct ProductCardView: View {
                 .padding(10)
             }
             
-            Text(item.categoryTitle)
+            Text(item.category.rawValue)
                 .font(.system(size: 15, weight: .semibold))
             
             Text(item.name)
@@ -68,7 +68,7 @@ struct ProductCardView: View {
 
             Text(item.specs)
                 .font(.system(size: 13, weight: .regular))
-                .foregroundStyle(Color(.secondaryLabel))
+                .foregroundStyle(.secondary)
 
             // Price row
             HStack(spacing: 10) {
@@ -81,12 +81,12 @@ struct ProductCardView: View {
 
                 Text(item.priceText)
                     .font(.system(size: 16, weight: .bold))
-                    .foregroundStyle(.primary)
+                    .foregroundColor(.primary)
             }
 
             Spacer(minLength: 0)
         }
-        .padding(10)
+        .padding(7)
         .background(
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(Color.white)

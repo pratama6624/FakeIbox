@@ -18,7 +18,7 @@ struct HomeViewOld: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
                 ZStack(alignment: .leading) {
-                  CarouselSlider(photos: $photos, frameHeight: $frameHeight, isShadow: $isShadow)
+//                  CarouselSlider(photos: $photos, frameHeight: $frameHeight, isShadow: $isShadow)
                     
                     Color.black.opacity(0.3)
                         .frame(height: 200)
@@ -153,8 +153,6 @@ struct HomeViewOld: View {
                 .background(.fill)
                 .cornerRadius(5)
                 .padding(.bottom, 10)
-                
-                Service()
             }
             .padding(.bottom, 10)
         }

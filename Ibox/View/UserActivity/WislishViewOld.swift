@@ -135,8 +135,6 @@ struct WislishViewOld: View {
             }
             .padding(.all, 10)
             .border(Color.gray, width: 0.5)
-            
-            Service()
         }
     }
 }

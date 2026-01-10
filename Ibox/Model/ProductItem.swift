@@ -7,9 +7,31 @@
 
 import Foundation
 
+enum ProductCategoryType: String, CaseIterable, Hashable {
+    case mac = "Mac"
+    case iphone = "iPhone"
+    case ipad = "iPad"
+    case watch = "Watch"
+    case music = "Music"
+    case accessories = "Accessories"
+    
+    init?(fromTitle title: String) {
+        let t = title.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        switch t {
+        case "mac": self = .mac
+        case "iphone": self = .iphone
+        case "ipad": self = .ipad
+        case "watch": self = .watch
+        case "music": self = .music
+        case "accessories", "accesories": self = .accessories
+        default: return nil
+        }
+    }
+}
+
 struct ProductItem: Identifiable, Hashable {
     let id = UUID()
-    let categoryTitle: String
+    let category: ProductCategoryType
     let name: String
     let specs: String
     let imageName: String

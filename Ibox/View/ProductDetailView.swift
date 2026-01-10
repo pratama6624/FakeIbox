@@ -31,9 +31,6 @@ struct ProductDetailView: View {
                         .padding(.top, 15)
                         .padding(.bottom, -20)
                         
-                        CarouselSlider(photos: $photos, frameHeight: $frameHeight, isShadow: $isShadwo)
-                            .padding(.bottom, -25)
-                        
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack (spacing: 10) {
                                 ForEach(photos, id: \.self) { photo in
@@ -328,8 +325,6 @@ struct ProductDetailView: View {
                             .foregroundStyle(Color.black)
                         }
                         .padding(.leading, -15)
-                        
-                        Service()
                     }
                     .padding(.top, 20)
                 }

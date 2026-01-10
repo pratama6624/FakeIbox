@@ -45,8 +45,6 @@ struct ProductViewOld: View {
                 }
             }
             .padding(.bottom, 10)
-            
-            Service()
         }
         .padding(.bottom, 50)
     }

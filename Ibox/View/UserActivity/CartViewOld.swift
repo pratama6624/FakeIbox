@@ -348,8 +348,6 @@ struct CartViewOld: View {
             }
             .background(.black)
             .padding(.bottom, 10)
-            
-            Service()
         }
         .padding(.bottom, 50)
     }

@@ -62,7 +62,7 @@ struct MainTabView: View {
                 .shadow(color: .black.opacity(0.06), radius: 10, x: 0, y: 6)
         }
         .padding(.horizontal, 16)
-        .padding(.bottom, 10)
+        .padding(.bottom, -5)
     }
     
     @ViewBuilder

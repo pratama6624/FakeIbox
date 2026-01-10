@@ -1,15 +1,14 @@
 //
-//  CategoryRowView.swift
+//  HomeCategoryView.swift
 //  Ibox
 //
-//  Created by Pratama One on 05/01/26.
+//  Created by Pratama One on 09/01/26.
 //
-
 import SwiftUI
 
-struct CategoryRowView: View {
+struct HomeCategoryView: View {
     let categories: [ProductCategory]
-    
+
     var body: some View {
         ScrollView(.horizontal) {
             HStack(spacing: 16) {
@@ -19,11 +18,10 @@ struct CategoryRowView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 59, height: 59)
-                            .clipped()
-                        
+
                         Text(cat.title)
                             .font(.system(size: 14, weight: .bold))
-                        
+
                         Text(cat.subtitle)
                             .font(.system(size: 11, weight: .medium))
                             .foregroundStyle(Color(.secondaryLabel))
@@ -32,6 +30,7 @@ struct CategoryRowView: View {
                 }
             }
             .padding(.vertical, 2)
+            .padding(.horizontal, 16)
         }
         .scrollIndicators(.hidden)
         .padding(.bottom, 10)
