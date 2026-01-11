@@ -10,6 +10,8 @@ import SwiftUI
 
 @MainActor
 final class HomeViewModel: ObservableObject {
+    private let sideMenuViewModel = SideMenuViewModel()
+    
     @Published var userName: String = "Pratama"
     @Published var selectedStore: String = "Pilih toko"
     
@@ -68,7 +70,7 @@ final class HomeViewModel: ObservableObject {
     // MARK: Action
     func tapSearch() {}
     func tapNotifications() {}
-    func tapMenu() {}
+    func tapMenu() { sideMenuViewModel.open() }
     func tapSelectStore() {}
     func tapSeeAllNews() {}
     func tapPromo(_ promo: PromoBanner) {}

@@ -20,15 +20,16 @@ struct MainTabView: View {
     @State private var selectedTab: MainTab = .home
     @State var showMenu: Bool = false
     @Namespace private var indicatorNS
+    let openMenu: () -> Void
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             VStack {
-                HomeHeaderView(
+                HeaderView(
                     userName: vm.userName,
                     onSearch: vm.tapSearch,
                     onNotification: vm.tapNotifications,
-                    onMenu: vm.tapMenu
+                    onMenu: openMenu
                 )
                 .padding(.top, 8)
                 .padding(.bottom, 20)

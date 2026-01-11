@@ -30,7 +30,6 @@ struct HomeCategoryView: View {
                 }
             }
             .padding(.vertical, 2)
-            .padding(.horizontal, 16)
         }
         .scrollIndicators(.hidden)
         .padding(.bottom, 10)

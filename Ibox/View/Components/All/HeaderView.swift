@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct HomeHeaderView: View {
+struct HeaderView: View {
+    var vm = SideMenuViewModel()
     let userName: String
     let onSearch: () -> Void
     let onNotification: () -> Void
@@ -51,3 +52,4 @@ struct HomeHeaderView: View {
         }
     }
 }
+
