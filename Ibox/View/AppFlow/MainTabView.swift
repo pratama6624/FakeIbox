@@ -17,7 +17,7 @@ enum MainTab {
 
 struct MainTabView: View {
     @StateObject private var vm = HomeViewModel()
-    @State private var selectedTab: MainTab = .home
+    @Binding var selectedTab: MainTab
     @State var showMenu: Bool = false
     @Namespace private var indicatorNS
     let openMenu: () -> Void

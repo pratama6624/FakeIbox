@@ -19,7 +19,8 @@ struct SideMenuView: View {
                     SideMenuRow(
                         title: item.title,
                         systemImage: item.systemImage,
-                        onTap: { vm.select(item.route) }
+                        onTap: { vm.select(item.route) },
+                        route: item.route
                     )
                 }
             }
@@ -32,7 +33,8 @@ struct SideMenuView: View {
                     SideMenuRow(
                         title: item.title,
                         systemImage: item.systemImage,
-                        onTap: { vm.select(item.route) }
+                        onTap: { vm.select(item.route) },
+                        route: item.route
                     )
                     .padding(.bottom, 3)
                     .font(.system(size: 15, weight: .semibold))
@@ -124,9 +126,12 @@ private struct SideMenuRow: View {
     let title: String
     let systemImage: String
     let onTap: () -> Void
+    let route: SideMenuRoute
 
     var body: some View {
-        Button(action: onTap) {
+        Button {
+            onTap()
+        } label: {
             HStack(spacing: 14) {
                 Image(systemName: systemImage)
                     .font(.system(size: 17, weight: .semibold))

@@ -37,6 +37,7 @@ final class AppRouter: ObservableObject {
     @Published var flow: AppFlow = .auth
     @Published var authPath = NavigationPath()
     @Published var mainPath = NavigationPath()
+    @Published var selectedTab: MainTab = .home
     
     init() {
         let args = ProcessInfo.processInfo.arguments
