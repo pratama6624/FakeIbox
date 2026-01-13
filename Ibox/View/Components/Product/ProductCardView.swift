@@ -10,6 +10,27 @@ import SwiftUI
 struct ProductCardView: View {
     let item: ProductItem
     let onTapWishlist: () -> Void
+    @State private var isShowingDetail = false
+    
+    let dummy = ProductDetailModels(
+        name: "IPhone 17 Pro Max",
+        sku: "8100226822",
+        priceText: "Rp25.749.000",
+        installmentText: "Rp1.072.875/bln. untuk 24 bln.*",
+        variants: [
+            .init(
+                colorName: "Orange",
+                imageNames: [
+                    "ip17promax", "ip17promax_1", "ip17promax_2", "ip17promax_3"
+                ]
+            )
+        ],
+        benefits: [
+            .init(systemIcon: "checkmark.seal", title: "Stok"),
+            .init(systemIcon: "truck.box", title: "Gratis ongkir"),
+            .init(systemIcon: "creditcard", title: "Cicilan 0%")
+        ]
+    )
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -58,6 +79,8 @@ struct ProductCardView: View {
                 .buttonStyle(.plain)
                 .padding(10)
             }
+            .contentShape(Rectangle())
+            .onTapGesture { isShowingDetail = true }
             
             Text(item.category.rawValue)
                 .font(.system(size: 15, weight: .semibold))
@@ -95,5 +118,10 @@ struct ProductCardView: View {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .stroke(Color.black.opacity(0.04), lineWidth: 1)
         )
+        .sheet(isPresented: $isShowingDetail) {
+            ProductDetailView(product: dummy, onBack: {})
+                .presentationDetents([.large]) // sheet dari bawah, besar
+                .presentationDragIndicator(.visible)
+        }
     }
 }

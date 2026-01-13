@@ -129,7 +129,7 @@ struct ProductViewItem: View {
         .foregroundColor(.black)
         .popover(isPresented: $showDetailProduct, arrowEdge: .top ) {
             GeometryReader { geometry in
-                ProductDetailView()
+                ProductDetailViewOld()
             }
         }
     }

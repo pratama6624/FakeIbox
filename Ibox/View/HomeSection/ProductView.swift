@@ -27,26 +27,10 @@ struct ProductView: View {
                     .id(topID)
                 
                 VStack(alignment: .leading, spacing: 18) {
-                    // Pilih toko
-                    Button {
-                        vm.tapSelectStore()
-                    } label: {
-                        HStack(spacing: 5) {
-                            Image(systemName: "house")
-                                .font(.system(size: 14))
-                                .padding(.bottom, 2)
-                            Text(vm.selectedStore)
-                                .font(.system(size: 15, weight: .bold))
-                        }
-                        .foregroundStyle(.primary)
-                        .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.plain)
                     
                     CategoryRowView(categories: vm.categories, selected: $pvm.selectedCategory) { cat in
                         pvm.selectCategory(cat)
                     }
-                    .padding(.top, 8)
                     
                     LazyVGrid(columns: cols, spacing: 7) {
                         ForEach(pvm.items) { item in

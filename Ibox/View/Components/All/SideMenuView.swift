@@ -10,6 +10,8 @@ import SwiftUI
 struct SideMenuView: View {
     @ObservedObject var vm: SideMenuViewModel
     
+    @EnvironmentObject private var router: AppRouter
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             header
@@ -76,7 +78,12 @@ struct SideMenuView: View {
             
             Spacer()
             
-            Button(action: { vm.logoutTapped() }) {
+            Button(
+                action: {
+//                    vm.logoutTapped()
+                    router.resetOnboarding()
+                }
+            ) {
                 Image(systemName: "rectangle.portrait.and.arrow.right")
                     .font(.system(size: 18, weight: .semibold))
             }

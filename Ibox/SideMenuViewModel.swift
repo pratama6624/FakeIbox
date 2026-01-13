@@ -36,7 +36,7 @@ final class SideMenuViewModel: ObservableObject {
     let secondaryItems: [SideMenuItem] = [
         .init(title: "Daftar Toko", systemImage: "mappin.and.ellipse", route: .storeList),
         .init(title: "Pusat Layanan", systemImage: "wrench.and.screwdriver", route: .supportCenter),
-        .init(title: "Cicilan & Pembayaran", systemImage: "creditcard", route: .installmentsHelp)
+        .init(title: "Pengaturan", systemImage: "gearshape", route: .installmentsHelp)
     ]
     
     func open() {

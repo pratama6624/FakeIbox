@@ -8,7 +8,7 @@
 import SwiftUI
 import WebKit
 
-struct ProductDetailView: View {
+struct ProductDetailViewOld: View {
     @State var photos = ["ip154", "ip152", "ip153", "ip155", "ip157"]
     @State private var information: String = "Get the latest information"
     @State private var selectedColor: String?
@@ -400,5 +400,5 @@ struct WebView: UIViewRepresentable {
 }
 
 #Preview {
-    ProductDetailView()
+    ProductDetailViewOld()
 }
