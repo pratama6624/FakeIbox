@@ -26,9 +26,24 @@ struct ProductCardView: View {
             )
         ],
         benefits: [
-            .init(systemIcon: "checkmark.seal", title: "Stok"),
+            .init(systemIcon: "checkmark.seal", title: "Ready Stok"),
             .init(systemIcon: "truck.box", title: "Gratis ongkir"),
             .init(systemIcon: "creditcard", title: "Cicilan 0%")
+        ],
+        colorOption: [
+            .init(name: "Oranye Kosmik", color: Color(red: 0.96, green: 0.53, blue: 0.20)),
+            .init(name: "Biru Pekat", color: Color(red: 0.10, green: 0.17, blue: 0.36)),
+            .init(name: "Perak", color: Color(red: 0.86, green: 0.86, blue: 0.86))
+        ],
+        modelOption: [
+            .init(title: "iPhone 17 Pro"),
+            .init(title: "iPhone 17 Pro Max")
+        ],
+        capacityOptions: [
+            .init(title: "256 GB"),
+            .init(title: "512 GB"),
+            .init(title: "1 TB"),
+            .init(title: "2 TB")
         ]
     )
     

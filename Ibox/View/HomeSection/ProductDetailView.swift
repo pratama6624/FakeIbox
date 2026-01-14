@@ -64,13 +64,38 @@ struct ProductDetailView: View {
                 .padding(.top, 6)
                 
                 ProductBenefitRow(benefits: vm.product.benefits)
-                    .padding(.top, 6)
+                    .padding(.top, 20)
                 
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Warna - \(vm.selectedColorLabel)")
-                        .font(.system(size: 15, weight: .bold))
+                // Color
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Warna - \(vm.selectedColorName)")
+                        .font(.system(size: 18, weight: .bold))
+                    
+                    ColorSwatchesView(
+                        options: vm.product.colorOption,
+                        selectedIndex: vm.selectedColorIndex,
+                        onSelect: vm.selectColor
+                    )
                 }
-                .padding(.top, 6)
+                .padding(.top, 20)
+                
+                // Model
+                OptionListView(
+                    title: "Model",
+                    options: vm.product.modelOption,
+                    selectedIndex: vm.selectedModelIndex,
+                    onSelect: vm.selectModel
+                )
+                .padding(.top, 20)
+                
+                // Capacity
+                OptionListView(
+                    title: "Kapasitas",
+                    options: vm.product.capacityOptions,
+                    selectedIndex: vm.selectedCapacityIndex,
+                    onSelect: vm.selectCapacity
+                )
+                .padding(.top, 20)
                 
                 Spacer(minLength: 24)
             }

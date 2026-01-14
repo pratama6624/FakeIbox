@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ProductVariant: Identifiable, Hashable {
     let id = UUID()
@@ -19,6 +20,17 @@ struct ProductBenefit: Identifiable, Hashable {
     let title: String
 }
 
+struct OptionItem: Identifiable, Hashable {
+    let id = UUID()
+    let title: String
+}
+
+struct ColorOption: Identifiable, Hashable {
+    let id = UUID()
+    let name: String
+    let color: Color
+}
+
 struct ProductDetailModels: Identifiable, Hashable {
     let id = UUID()
     let name: String
@@ -29,4 +41,8 @@ struct ProductDetailModels: Identifiable, Hashable {
     
     let variants: [ProductVariant]
     let benefits: [ProductBenefit]
+    
+    let colorOption: [ColorOption]
+    let modelOption: [OptionItem]
+    let capacityOptions: [OptionItem]
 }

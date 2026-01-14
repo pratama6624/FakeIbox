@@ -15,9 +15,9 @@ struct ProductBenefitRow: View {
             ForEach(benefits) { b in
                 HStack(spacing: 8) {
                     Image(systemName: b.systemIcon)
-                        .font(.system(size: 15, weight: .semibold))
+                        .font(.system(size: 18, weight: .semibold))
                     Text(b.title)
-                        .font(.system(size: 10, weight: .semibold))
+                        .font(.system(size: 14, weight: .semibold))
                 }
                 .foregroundStyle(.primary)
                 .frame(maxWidth: .infinity, alignment: .center)

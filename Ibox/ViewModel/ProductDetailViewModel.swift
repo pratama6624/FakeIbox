@@ -11,6 +11,10 @@ import SwiftUI
 final class ProductDetailViewModel: ObservableObject {
     @Published private(set) var product: ProductDetailModels
     
+    @Published var selectedColorIndex: Int = 0
+    @Published var selectedModelIndex: Int = 0
+    @Published var selectedCapacityIndex: Int = 0
+    
     @Published var selectedVariantIndex: Int = 0
     @Published var imageIndex: Int = 0
     
@@ -50,13 +54,39 @@ final class ProductDetailViewModel: ObservableObject {
         imageIndex = 0
     }
     
-    func addToCart() {
-        // TODO : Cart Service from API
-        print("Add to cart via vapor")
-    }
-    
     func openInstallmentSimulation() {
         // TODO : Open sheet / navigate
         print("Open installment simulation")
+    }
+    
+    var selectedColorName: String {
+        product.colorOption.indices.contains(selectedColorIndex)
+        ? product.colorOption[selectedColorIndex].name
+        : "-"
+    }
+    
+    func selectColor(_ idx: Int) {
+        guard product.colorOption.indices.contains(idx) else { return }
+        selectedColorIndex = idx
+    }
+    
+    func selectModel(_ idx: Int) {
+        guard product.modelOption.indices.contains(idx) else { return }
+        selectedModelIndex = idx
+    }
+    
+    func selectCapacity(_ idx: Int) {
+        guard product.capacityOptions.indices.contains(idx) else { return }
+        selectedCapacityIndex = idx
+    }
+    
+    func addToCart() {
+        let color = selectedColorName
+        let model = product.modelOption[selectedModelIndex].title
+        let cap = product.capacityOptions[selectedCapacityIndex].title
+        // Just Debug
+        // TODO : Cart Service from API
+        // print("Add to cart via vapor")
+        print("Add to cart:", product.name, color, model, cap)
     }
 }
