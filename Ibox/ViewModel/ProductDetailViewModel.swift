@@ -18,6 +18,8 @@ final class ProductDetailViewModel: ObservableObject {
     @Published var selectedVariantIndex: Int = 0
     @Published var imageIndex: Int = 0
     
+    @Published var quantity: Int = 1
+    
     init(product: ProductDetailModels) {
         self.product = product
     }
@@ -78,6 +80,22 @@ final class ProductDetailViewModel: ObservableObject {
     func selectCapacity(_ idx: Int) {
         guard product.capacityOptions.indices.contains(idx) else { return }
         selectedCapacityIndex = idx
+    }
+    
+    func decrementQty() {
+        quantity = max(1, quantity - 1)
+    }
+    
+    func incrementQty() {
+        quantity = min(99, quantity + 1)
+    }
+    
+    func openLearnMore() {
+        print("Learn more...")
+    }
+    
+    func openCompareModels() {
+        print("Compare models")
     }
     
     func addToCart() {

@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     let onLogout: () -> Void
     @StateObject private var vm = HomeViewModel()
+    @StateObject private var pvm = RecommendedViewModel()
     
     var body: some View {
         ScrollView {
@@ -51,28 +52,10 @@ struct HomeView: View {
                     SectionHeaderView(title: "Rekomendasi Terbaik")
                         .padding(.bottom, 10)
 
-                    VStack(spacing: 10) {
-                        ForEach(vm.recommendedVisible) { item in
-                            RecommendedProductRow(item: item) {
-                                vm.toggleWishlist(id: item.id)
-                            }
-                        }
-
-                        Button(vm.showAllRecommended ? "Show Less" : "Show More") {
-                            withAnimation(.easeOut(duration: 0.2)) {
-                                vm.toggleShowMore()
-                            }
-                        }
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundStyle(.primary)
-                        .padding(.horizontal, 14)
-                        .padding(.vertical, 8)
-                        .background(
-                            Capsule().fill(Color(.systemGray5))
-                        )
-                        .buttonStyle(.plain)
-                        .padding(.top, 2)
+                    RecommendedSectionView(items: pvm.recommended) { item in
+                        pvm.buyNow(item)
                     }
+                    .padding(.top, 6)
                 }
                 .padding(.top, 6)
 
@@ -83,6 +66,9 @@ struct HomeView: View {
             .padding(.bottom, 20)
         }
         .scrollIndicators(.hidden)
-        .onAppear { vm.load() }
+        .onAppear {
+            vm.load()
+            pvm.loadRecommeded()
+        }
     }
 }

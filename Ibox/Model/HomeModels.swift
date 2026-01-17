@@ -31,7 +31,6 @@ struct RecommendedProduct: Identifiable, Hashable {
     let name: String
     let variant: String
     let priceText: String
-    let rating: Int
     var isWishlisted: Bool
 }
 

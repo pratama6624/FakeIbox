@@ -53,10 +53,10 @@ final class HomeViewModel: ObservableObject {
         ]
         
         recommended = [
-            .init(imageName: "prod_macair", name: "Macbook Air 15”", variant: "8/256 Starlight", priceText: "IDR 20.000.000", rating: 5, isWishlisted: false),
-            .init(imageName: "prod_mbpm2_1", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", rating: 5, isWishlisted: false),
-            .init(imageName: "prod_mbpm2_2", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", rating: 5, isWishlisted: true),
-            .init(imageName: "prod_mbpm2_3", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", rating: 4, isWishlisted: false)
+            .init(imageName: "prod_macair", name: "Macbook Air 15”", variant: "8/256 Starlight", priceText: "IDR 20.000.000", isWishlisted: false),
+            .init(imageName: "prod_mbpm2_1", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", isWishlisted: false),
+            .init(imageName: "prod_mbpm2_2", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", isWishlisted: true),
+            .init(imageName: "prod_mbpm2_3", name: "Macbook Pro M2 13”", variant: "8/256 Gray", priceText: "IDR 20.500.000", isWishlisted: false)
         ]
 
         features = [
