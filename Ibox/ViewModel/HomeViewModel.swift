@@ -60,10 +60,10 @@ final class HomeViewModel: ObservableObject {
         ]
 
         features = [
-            .init(iconName: "checkmark.seal", title: "Official Guarantee", subtitle: "Official Warranty\nProduct"),
-            .init(iconName: "headphones", title: "Customer Care", subtitle: "Our team is ready to\nhelp with products"),
-            .init(iconName: "shippingbox", title: "Delivery Service", subtitle: "Trusted Delivery"),
-            .init(iconName: "sparkles", title: "Many Benefits", subtitle: "Latest Promos and Info\non Latest Products")
+            .init(iconName: "checkmark.seal", title: "Garansi", subtitle: "Garansi Produk\nOfficial"),
+            .init(iconName: "headphones", title: "Layanan", subtitle: "Kami siap membantu Anda\ndengan produk kami."),
+            .init(iconName: "shippingbox", title: "Jasa Pengiriman", subtitle: "Pengiriman terpercaya"),
+            .init(iconName: "sparkles", title: "Banyak Manfaat", subtitle: "Promo dan Info Terbaru\nProduk Terbaru")
         ]
     }
     
