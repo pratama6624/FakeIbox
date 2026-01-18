@@ -25,6 +25,7 @@
 		414512D32B79A43C00636265 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D22B79A43C00636265 /* PaymentView.swift */; };
 		414512D52B79A65800636265 /* AccountViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414512D42B79A65800636265 /* AccountViewOld.swift */; };
 		4147EA412F1B321E0038E599 /* RecommendedMiniItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147EA402F1B321D0038E599 /* RecommendedMiniItem.swift */; };
+		4147EA432F1B35520038E599 /* CartModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147EA422F1B35450038E599 /* CartModels.swift */; };
 		4154FD452B6C6E62009DD06F /* IboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154FD442B6C6E62009DD06F /* IboxApp.swift */; };
 		4154FD472B6C6E62009DD06F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154FD462B6C6E62009DD06F /* ContentView.swift */; };
 		4154FD492B6C6E64009DD06F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4154FD482B6C6E64009DD06F /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		414512D22B79A43C00636265 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		414512D42B79A65800636265 /* AccountViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewOld.swift; sourceTree = "<group>"; };
 		4147EA402F1B321D0038E599 /* RecommendedMiniItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedMiniItem.swift; sourceTree = "<group>"; };
+		4147EA422F1B35450038E599 /* CartModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModels.swift; sourceTree = "<group>"; };
 		4154FD412B6C6E62009DD06F /* Ibox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4154FD442B6C6E62009DD06F /* IboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IboxApp.swift; sourceTree = "<group>"; };
 		4154FD462B6C6E62009DD06F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		4113B6762B6DFB4F0017B18A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4147EA422F1B35450038E599 /* CartModels.swift */,
 				4147EA402F1B321D0038E599 /* RecommendedMiniItem.swift */,
 				41C354202F169B8D00BC6EB5 /* SliderImage.swift */,
 				41C3540F2F15362C00BC6EB5 /* ProductDetailModels.swift */,
@@ -341,6 +344,7 @@
 				41DDB8672EF75E4400B4E91E /* ForgotPasswordView.swift in Sources */,
 				4113B6752B6DFB3E0017B18A /* ProductDetailViewOld.swift in Sources */,
 				4147EA412F1B321E0038E599 /* RecommendedMiniItem.swift in Sources */,
+				4147EA432F1B35520038E599 /* CartModels.swift in Sources */,
 				4113B6732B6DFB210017B18A /* ProductViewOld.swift in Sources */,
 				41D3ADEC2B6FF0FB0066F72E /* back.swift in Sources */,
 				41D3ADEE2B7069F40066F72E /* WislishViewOld.swift in Sources */,
