@@ -79,7 +79,7 @@ final class ProductViewModel: ObservableObject {
     private func applyFilterAndPaging() {
         let filtered = allItems.filter { $0.category == selectedCategory }
         
-        let perPage = 4
+        let perPage = 10
         let start = (page - 1) * perPage
         let end = min(start + perPage, filtered.count)
         

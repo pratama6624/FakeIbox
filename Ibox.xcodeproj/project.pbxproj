@@ -96,6 +96,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4127E6862EF98F04004CB2A0 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		4147EA532F1D2F0F0038E599 /* ServiceSection */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ServiceSection; sourceTree = "<group>"; };
 		41564B1D2F035C5D0033FE22 /* Route */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Route; sourceTree = "<group>"; };
 		41564B292F0673580033FE22 /* AppFlow */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AppFlow; sourceTree = "<group>"; };
 		41779C282EFDF92100AF9E39 /* Service */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Service; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		4113B66F2B6DF9D80017B18A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4147EA532F1D2F0F0038E599 /* ServiceSection */,
 				41564B292F0673580033FE22 /* AppFlow */,
 				4127E6862EF98F04004CB2A0 /* Components */,
 				41DDB8512EF1AD4F00B4E91E /* OnBoarding */,
@@ -269,6 +271,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				4127E6862EF98F04004CB2A0 /* Components */,
+				4147EA532F1D2F0F0038E599 /* ServiceSection */,
 				41564B1D2F035C5D0033FE22 /* Route */,
 				41564B292F0673580033FE22 /* AppFlow */,
 				41779C282EFDF92100AF9E39 /* Service */,

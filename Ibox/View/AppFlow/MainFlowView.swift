@@ -39,7 +39,7 @@ struct MainFlowView: View {
                 router.selectedTab = .wislish
 
             case .latestNews, .haloBox, .activity, .installments,
-                 .storeList, .supportCenter, .installmentsHelp:
+                 .storeList, .supportCenter, .settings:
                 router.mainPath.append(route)
         }
     }
@@ -47,13 +47,27 @@ struct MainFlowView: View {
     @ViewBuilder
     private func destination(for route: SideMenuRoute) -> some View {
         switch route {
-        case .latestNews: Text("Berita Terbaru")
-        case .haloBox: Text("Halo Box")
-        case .activity: Text("Aktivitas")
-        case .installments: Text("Cicilan & Pembayaran")
-        case .storeList: Text("Daftar Toko")
-        case .supportCenter: Text("Pusat Layanan")
-        case .installmentsHelp: Text("Cicilan & Pembayaran")
+        case .latestNews:
+            Text("Berita Terbaru")
+                .navigationTitle("Berita Terbaru")
+        case .haloBox:
+            Text("Halo Boc")
+                .navigationTitle("Halo Boc")
+        case .activity:
+            Text("Aktivitas")
+                .navigationTitle("Aktivitas")
+        case .installments:
+            Text("Cicilan & Pembayaran")
+                .navigationTitle("Cicilan & Pembayaran")
+        case .storeList:
+            Text("Daftar Toko")
+                .navigationTitle("Daftar Toko")
+        case .supportCenter:
+            ServiceCenterView()
+                .navigationTitle("Pusat Layanan")
+        case .settings:
+            Text("Pengaturan")
+                .navigationTitle("Pengaturan")
             
         case .profile, .products, .wishlist, .cart:
             EmptyView()

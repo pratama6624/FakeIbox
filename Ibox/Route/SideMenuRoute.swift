@@ -19,5 +19,5 @@ enum SideMenuRoute: Hashable {
     
     case storeList
     case supportCenter
-    case installmentsHelp
+    case settings
 }
