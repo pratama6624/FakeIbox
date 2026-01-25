@@ -21,22 +21,15 @@ struct ProductDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
-                HStack(spacing: 12) {
+                HStack {
                     Spacer()
                     
-                    Text("Detail Produk")
-                        .font(.system(size: 15, weight: .bold))
+                    Text("SKU: \(vm.product.sku)")
+                        .font(.system(size: 12, weight: .regular))
+                        .foregroundStyle(Color(.secondaryLabel))
                     
                     Spacer()
                 }
-                .padding(.top, 22)
-                
-                Text(vm.product.name)
-                    .font(.system(size: 17, weight: .bold))
-                
-                Text("SKU: \(vm.product.sku)")
-                    .font(.system(size: 12, weight: .regular))
-                    .foregroundStyle(Color(.secondaryLabel))
                 
                 SliderImageView(images: [
                     .init(imageName: "ip17promax"),
@@ -158,6 +151,7 @@ struct ProductDetailView: View {
             .padding(.bottom, 10)
         }
         .scrollIndicators(.hidden)
+        .padding(.bottom, 10)
         .safeAreaInset(edge: .bottom) {
             StickyAddToCartBar(
                 priceText: "Rp25.749.000",

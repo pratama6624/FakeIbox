@@ -43,6 +43,6 @@ struct StickyAddToCartBar: View {
                 .fill(Color(.systemGray6))
         )
         .padding(.horizontal, 16)
-        .padding(.bottom, 10)
+        .padding(.bottom, 0)
     }
 }
